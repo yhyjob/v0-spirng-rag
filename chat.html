@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>聊天 - AI智能平台</title>
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/chat.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/common.js"></script>
+</head>
+<body>
+    <div class="chat-layout">
+        <aside class="sidebar">
+            <a class="sidebar-item active" href="#" title="聊天">
+                <span class="icon">💬</span>
+                <span class="text">聊天</span>
+            </a>
+            <a class="sidebar-item" href="apps.htm" title="应用">
+                <span class="icon">🗂️</span>
+                <span class="text">应用</span>
+            </a>
+            <a class="sidebar-item" href="#" title="知识库">
+                <span class="icon">📚</span>
+                <span class="text">知识库</span>
+            </a>
+            <a class="sidebar-item" href="#" title="模型">
+                <span class="icon">🧠</span>
+                <span class="text">模型</span>
+            </a>
+        </aside>
+
+        <section class="thread-panel">
+            <header class="thread-header">
+                <button class="btn btn-primary new-thread">+ 新对话</button>
+            </header>
+            <ul class="thread-list">
+                <li class="thread-item active">
+                    <span class="app-icon">🟦</span>
+                    <span class="name">insyu</span>
+                </li>
+                <li class="thread-item">
+                    <span class="app-icon">🟦</span>
+                    <span class="name">InsuranceAssist</span>
+                </li>
+                <li class="thread-item">
+                    <span class="app-icon">🟦</span>
+                    <span class="name">insSt</span>
+                </li>
+                <li class="thread-item">
+                    <span class="app-icon">🟦</span>
+                    <span class="name">InsuranceQA</span>
+                </li>
+            </ul>
+        </section>
+
+        <main class="chat-panel">
+            <header class="chat-header">
+                <h2 class="title">你是谁？</h2>
+            </header>
+
+            <div id="chatBody" class="chat-body">
+                <div class="msg bot">
+                    <div class="avatar">🤖</div>
+                    <div class="bubble">hello</div>
+                </div>
+                <div class="msg bot">
+                    <div class="avatar">🤖</div>
+                    <div class="bubble">你是MoPass AI 助手。</div>
+                </div>
+                <div class="msg bot">
+                    <div class="avatar">🤖</div>
+                    <div class="bubble">There is no data to answer your question. Please add data.</div>
+                </div>
+                <div class="msg user">
+                    <div class="avatar">🙂</div>
+                    <div class="bubble">你是谁？</div>
+                </div>
+                <div class="msg user">
+                    <div class="avatar">🙂</div>
+                    <div class="bubble">我是谁？</div>
+                </div>
+            </div>
+
+            <footer class="chat-input">
+                <div class="input-wrap">
+                    <input id="msgInput" type="text" class="form-input" placeholder="请输入问题">
+                    <button id="sendBtn" class="btn btn-primary">发送</button>
+                </div>
+            </footer>
+        </main>
+    </div>
+
+    <script src="assets/js/chat.js"></script>
+</body>
+</html>
+
+

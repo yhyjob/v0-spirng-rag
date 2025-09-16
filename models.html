@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>模型 - AI智能平台</title>
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/models.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/common.js"></script>
+</head>
+<body>
+    <div class="models-layout">
+        <aside class="sidebar">
+            <a class="sidebar-item" href="chat.html" title="聊天">
+                <span class="icon">💬</span>
+                <span class="text">聊天</span>
+            </a>
+            <a class="sidebar-item" href="apps.htm" title="应用">
+                <span class="icon">🗂️</span>
+                <span class="text">应用</span>
+            </a>
+            <a class="sidebar-item" href="knowledge.html" title="知识库">
+                <span class="icon">📚</span>
+                <span class="text">知识库</span>
+            </a>
+            <a class="sidebar-item active" href="#" title="模型">
+                <span class="icon">🧠</span>
+                <span class="text">模型</span>
+            </a>
+        </aside>
+
+        <main class="content">
+            <header class="models-header container">
+                <div class="left">
+                    <h1 class="page-title">模型</h1>
+                </div>
+                <div class="right">
+                    <div class="search-box">
+                        <input id="modelSearch" class="form-input" type="text" placeholder="搜索模型">
+                    </div>
+                </div>
+            </header>
+
+            <section class="tip container">
+                已添加的模型
+            </section>
+
+            <section class="models-grid container" id="modelsGrid">
+                <article class="model-card" data-tags="默认大模型 QWen3-32B 大模型">
+                    <div class="model-icon">⭐</div>
+                    <div class="meta">
+                        <div class="name">默认大模型</div>
+                        <div class="desc">QWen3-32B</div>
+                    </div>
+                </article>
+
+                <article class="model-card" data-tags="大模型 QWen3-0.6B">
+                    <div class="model-icon">⭐</div>
+                    <div class="meta">
+                        <div class="name">大模型</div>
+                        <div class="desc">QWen3-0.6B</div>
+                    </div>
+                </article>
+
+                <article class="model-card" data-tags="向量模型 QWen3-embedding-0.6B 向量">
+                    <div class="model-icon">🔤</div>
+                    <div class="meta">
+                        <div class="name">向量模型</div>
+                        <div class="desc">QWen3-embedding-0.6B</div>
+                    </div>
+                </article>
+
+                <article class="model-card" data-tags="重排模型 Qwen3-Reranker-4B">
+                    <div class="model-icon">🧩</div>
+                    <div class="meta">
+                        <div class="name">重排模型</div>
+                        <div class="desc">Qwen3-Reranker-4B</div>
+                    </div>
+                </article>
+
+                <article class="model-card" data-tags="语音模型 OpenAI whisper-large-v3-turbo 语音">
+                    <div class="model-icon">🎧</div>
+                    <div class="meta">
+                        <div class="name">语音模型</div>
+                        <div class="desc">OpenAI whisper-large-v3-turbo</div>
+                    </div>
+                </article>
+
+                <article class="model-card" data-tags="大模型 Llama3.2-1b-instruct">
+                    <div class="model-icon">🦙</div>
+                    <div class="meta">
+                        <div class="name">大模型</div>
+                        <div class="desc">Llama3.2-1b-instruct</div>
+                    </div>
+                </article>
+
+                <article class="model-card wide" data-tags="MeloTTS 语音 TTS">
+                    <div class="model-icon">🎙️</div>
+                    <div class="meta">
+                        <div class="name">MeloTTS</div>
+                        <div class="desc">MIT & MySell.ai MeloTTS 语音播报模型</div>
+                    </div>
+                </article>
+            </section>
+        </main>
+    </div>
+
+    <script src="assets/js/models.js"></script>
+</body>
+</html>
+
+

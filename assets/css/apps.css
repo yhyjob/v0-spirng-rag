@@ -1,0 +1,98 @@
+/* 布局 */
+.apps-layout {
+  display: grid;
+  grid-template-columns: 72px 1fr;
+  min-height: 100vh;
+  background: #f7f8fa;
+}
+
+.sidebar {
+  background: #ffffff;
+  border-right: 1px solid #e5e7eb;
+  padding-top: 1rem;
+}
+
+.sidebar-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.75rem 0;
+  color: #6b7280;
+  text-decoration: none;
+  transition: color 0.2s ease, background 0.2s ease;
+}
+
+.sidebar-item .icon { font-size: 1.25rem; }
+.sidebar-item .text { font-size: 0.75rem; }
+
+.sidebar-item:hover { background: #f3f4f6; color: #111827; }
+.sidebar-item.active { color: #1d4ed8; background: #eff6ff; }
+
+.content { padding: 1.5rem 0 3rem; }
+
+/* 顶部区域 */
+.apps-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.page-title { font-size: 1.25rem; font-weight: 700; color: #111827; }
+
+.search-box { width: 320px; }
+
+.apps-toolbar { margin-bottom: 1rem; }
+.tabs { display: inline-flex; gap: 0.5rem; }
+.tab {
+  padding: 0.5rem 0.875rem;
+  border-radius: 0.5rem;
+  background: #eef2ff;
+  color: #3730a3;
+  border: none;
+  cursor: pointer;
+}
+.tab.active { background: #4338ca; color: #fff; }
+
+/* 卡片网格 */
+.apps-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+@media (max-width: 1200px) { .apps-grid { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 900px) { .apps-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 600px) { .apps-grid { grid-template-columns: 1fr; } }
+
+.app-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.75rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.app-card:hover { box-shadow: 0 8px 24px rgba(0,0,0,.06); transform: translateY(-2px); }
+
+.card-head { display: flex; align-items: center; gap: 0.75rem; }
+.app-icon { width: 36px; height: 36px; display: grid; place-items: center; background: #eff6ff; color: #1d4ed8; border-radius: 0.5rem; }
+.meta { flex: 1; }
+.title { font-size: 1rem; font-weight: 700; color: #111827; }
+.subtitle { font-size: 0.75rem; color: #6b7280; margin-top: 2px; }
+.more { border: none; background: transparent; cursor: pointer; color: #6b7280; font-size: 1.25rem; }
+
+.card-body .desc { font-size: 0.875rem; color: #374151; }
+
+.card-foot { display: flex; align-items: center; justify-content: space-between; }
+.owner { display: inline-flex; align-items: center; gap: 0.5rem; color: #374151; }
+.avatar { width: 22px; height: 22px; display: grid; place-items: center; background: #f3f4f6; border-radius: 50%; font-size: 0.75rem; }
+.stats { display: inline-flex; align-items: center; gap: 0.5rem; color: #6b7280; font-size: 0.75rem; }
+.dot { width: 6px; height: 6px; border-radius: 9999px; background: #9ca3af; display: inline-block; }
+
+

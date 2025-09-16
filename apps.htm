@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>应用 - AI智能平台</title>
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/apps.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/common.js"></script>
+</head>
+<body>
+    <div class="apps-layout">
+        <aside class="sidebar">
+            <a class="sidebar-item" href="#" title="聊天">
+                <span class="icon">💬</span>
+                <span class="text">聊天</span>
+            </a>
+            <a class="sidebar-item active" href="#" title="应用">
+                <span class="icon">🗂️</span>
+                <span class="text">应用</span>
+            </a>
+            <a class="sidebar-item" href="#" title="知识库">
+                <span class="icon">📚</span>
+                <span class="text">知识库</span>
+            </a>
+            <a class="sidebar-item" href="#" title="模型">
+                <span class="icon">🧠</span>
+                <span class="text">模型</span>
+            </a>
+        </aside>
+
+        <main class="content">
+            <header class="apps-header container">
+                <div class="left">
+                    <h1 class="page-title">应用</h1>
+                </div>
+                <div class="right">
+                    <div class="search-box">
+                        <input id="appSearch" class="form-input" type="text" placeholder="搜索应用">
+                    </div>
+                    <button id="createApp" class="btn btn-primary">新建应用</button>
+                </div>
+            </header>
+
+            <section class="apps-toolbar container">
+                <div class="tabs">
+                    <button class="tab active" data-tab="all">全部</button>
+                    <button class="tab" data-tab="mine">我的</button>
+                    <button class="tab" data-tab="shared">共享</button>
+                </div>
+            </section>
+
+            <section class="apps-grid container" id="appsGrid">
+                <article class="app-card" data-tags="InsuranceAssist 私有 文本创作 我的">
+                    <div class="card-head">
+                        <div class="app-icon">🟦</div>
+                        <div class="meta">
+                            <h3 class="title">InsuranceAssist</h3>
+                            <div class="subtitle">文本创作 · 私有</div>
+                        </div>
+                        <button class="more" aria-label="更多">⋯</button>
+                    </div>
+                    <div class="card-body">
+                        <p class="desc">保险智能助手：保单解析、术语解释、用途说明与问答。</p>
+                    </div>
+                    <div class="card-foot">
+                        <div class="owner"><span class="avatar">👤</span><span class="name">tigerlee</span></div>
+                        <div class="stats"><span class="dot"></span><span>5 天前</span></div>
+                    </div>
+                </article>
+
+                <article class="app-card" data-tags="insyu 私有 文本创作 我的">
+                    <div class="card-head">
+                        <div class="app-icon">🟦</div>
+                        <div class="meta">
+                            <h3 class="title">insyu</h3>
+                            <div class="subtitle">文本创作 · 私有</div>
+                        </div>
+                        <button class="more" aria-label="更多">⋯</button>
+                    </div>
+                    <div class="card-body">
+                        <p class="desc">寿险/意健险/健康险的说明生成与问答，覆盖理赔场景。</p>
+                    </div>
+                    <div class="card-foot">
+                        <div class="owner"><span class="avatar">👤</span><span class="name">tigerlee</span></div>
+                        <div class="stats"><span class="dot"></span><span>5 小时前</span></div>
+                    </div>
+                </article>
+
+                <article class="app-card" data-tags="insSt 私有 文本创作 共享">
+                    <div class="card-head">
+                        <div class="app-icon">🟦</div>
+                        <div class="meta">
+                            <h3 class="title">insSt</h3>
+                            <div class="subtitle">文本创作 · 私有</div>
+                        </div>
+                        <button class="more" aria-label="更多">⋯</button>
+                    </div>
+                    <div class="card-body">
+                        <p class="desc">条款解读与润色的写作助手，支持多模板生成。</p>
+                    </div>
+                    <div class="card-foot">
+                        <div class="owner"><span class="avatar">👤</span><span class="name">tigerlee</span></div>
+                        <div class="stats"><span class="dot"></span><span>6 小时前</span></div>
+                    </div>
+                </article>
+
+                <article class="app-card" data-tags="InsuranceQA 私有 文本创作 共享">
+                    <div class="card-head">
+                        <div class="app-icon">🟦</div>
+                        <div class="meta">
+                            <h3 class="title">InsuranceQA</h3>
+                            <div class="subtitle">文本创作 · 私有</div>
+                        </div>
+                        <button class="more" aria-label="更多">⋯</button>
+                    </div>
+                    <div class="card-body">
+                        <p class="desc">保险问答与知识检索助手，支持术语解释、条款比对与要点总结。</p>
+                    </div>
+                    <div class="card-foot">
+                        <div class="owner"><span class="avatar">👤</span><span class="name">tigerlee</span></div>
+                        <div class="stats"><span class="dot"></span><span>1 个月前</span></div>
+                    </div>
+                </article>
+            </section>
+        </main>
+    </div>
+
+    <script src="assets/js/apps.js"></script>
+</body>
+</html>
+
+
